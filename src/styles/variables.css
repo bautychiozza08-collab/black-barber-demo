@@ -1,0 +1,22 @@
+:root {
+  --bg: #050505;
+  --bg-soft: #0d0d0d;
+  --card: #121212;
+
+  --gold: #d6a84f;
+  --gold-soft: #ffdf8b;
+
+  --white: #ffffff;
+  --text: #c9c9c9;
+  --muted: #8f8f8f;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+
+  --container: 1180px;
+
+  --shadow-gold: 0 0 70px rgba(214, 168, 79, 0.18);
+}

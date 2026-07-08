@@ -1,0 +1,110 @@
+.contact {
+  padding: 140px 24px;
+  background:
+    radial-gradient(circle at center, rgba(214, 168, 79, .16), transparent 35%),
+    #080808;
+}
+
+.contact-box {
+  text-align: center;
+  padding: 90px 40px;
+  border-radius: 38px;
+  background:
+    linear-gradient(rgba(0,0,0,.72), rgba(0,0,0,.88)),
+    url("../../assets/hero.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(214, 168, 79, .18);
+  box-shadow: 0 40px 120px rgba(0,0,0,.45);
+  overflow: hidden;
+}
+
+.contact-box h2 {
+  font-size: 72px;
+  line-height: 1;
+  margin: 20px auto 24px;
+  max-width: 850px;
+}
+
+.contact-box h2 span {
+  color: var(--gold);
+}
+
+.contact-box p {
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto 42px;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+.contact-btn {
+  padding: 17px 30px;
+  border-radius: 999px;
+  font-weight: 900;
+  transition: .3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+}
+
+.primary-contact {
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: #050505;
+}
+
+.secondary-contact {
+  border: 1px solid rgba(214,168,79,.35);
+  color: white;
+  background: rgba(0,0,0,.35);
+}
+
+.contact-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.contact-mini-grid div {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(0,0,0,.48);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(14px);
+}
+
+.contact-mini-grid strong {
+  display: block;
+  color: var(--gold-soft);
+  margin-bottom: 8px;
+}
+
+.contact-mini-grid span {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .contact-box {
+    padding: 60px 24px;
+  }
+
+  .contact-box h2 {
+    font-size: 42px;
+  }
+
+  .contact-mini-grid {
+    grid-template-columns: 1fr;
+  }
+}

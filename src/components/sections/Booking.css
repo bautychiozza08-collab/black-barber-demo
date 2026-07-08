@@ -1,0 +1,88 @@
+.booking {
+  padding: 130px 24px;
+  background:
+    radial-gradient(circle at right, rgba(214, 168, 79, .12), transparent 35%),
+    #080808;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 1fr 480px;
+  gap: 60px;
+  align-items: center;
+}
+
+.booking-content h2 {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.booking-content h2 span {
+  color: var(--gold);
+}
+
+.booking-content p {
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 34px;
+}
+
+.booking-btn {
+  display: inline-flex;
+  padding: 17px 30px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: #050505;
+  font-weight: 900;
+  box-shadow: var(--shadow-gold);
+}
+
+.hours-card {
+  padding: 36px;
+  border-radius: 32px;
+  background: rgba(18, 18, 18, .88);
+  border: 1px solid rgba(214, 168, 79, .18);
+  box-shadow: 0 30px 100px rgba(0,0,0,.35);
+}
+
+.hours-card h3 {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.hour-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.hour-row span {
+  color: var(--muted);
+}
+
+.hour-row strong {
+  color: var(--gold-soft);
+}
+
+.hours-note {
+  margin-top: 28px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(214,168,79,.08);
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-content h2 {
+    font-size: 44px;
+  }
+}

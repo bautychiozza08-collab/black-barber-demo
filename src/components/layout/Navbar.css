@@ -1,0 +1,106 @@
+.navbar {
+  position: fixed;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1180px, calc(100% - 32px));
+  height: 76px;
+  padding: 0 18px 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(8, 8, 8, 0.55);
+  backdrop-filter: blur(22px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.navbar-scrolled {
+  top: 12px;
+  background: rgba(5, 5, 5, 0.88);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.nav-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, var(--gold-soft), var(--gold));
+  color: #050505;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 24px;
+  box-shadow: var(--shadow-gold);
+}
+
+.nav-brand strong {
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.nav-brand span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: var(--text);
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--gold-soft);
+}
+
+.nav-button {
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+  color: #050505;
+  font-weight: 800;
+  font-size: 14px;
+  box-shadow: var(--shadow-gold);
+  transition: 0.25s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-brand span {
+    display: none;
+  }
+
+  .navbar {
+    height: 68px;
+  }
+
+  .nav-button {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+}
